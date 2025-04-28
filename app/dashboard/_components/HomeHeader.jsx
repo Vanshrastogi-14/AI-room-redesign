@@ -12,10 +12,10 @@ function HomeHeader() {
         <div className='p-5 shadow-md flex justify-between items-center'>
             <div className='flex gap-2 items-center'>
                 <Image src={'/logo.svg'} alt='logo_img' width={40} height={40} />
-                <h2 className='font-bold text-lg'>Ai Room Design</h2>
+                <h2 className='font-bold lg:text-lg text-sm'>Ai Room Design</h2>
             </div>
             <Link href={'/dashboard/buy-credits'}>
-                <Button variant="ghost" className="rounded-full text-primary">Buy More Credits</Button>
+                <Button variant="ghost" className="rounded-full text-primary mr-2 md:mr-0 lg:mr-0">Buy More Credits</Button>
             </Link>
 
             <div className='flex gap-7 items-center'>
@@ -24,7 +24,7 @@ function HomeHeader() {
                     <h2>{userDetail?.credits}</h2>
                 </div> */}
                 {/* <UserButton /> */}
-                <div>
+                <div className="hidden md:block lg:block">
                     <Link href={'/dashboard'}>
                         <Button>-Dashboard-</Button>
                     </Link>

@@ -13,6 +13,8 @@ import {
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+
 
 
 
@@ -45,7 +47,7 @@ function AiOutputDialog({ openDialog, closeDialog, orgImage, aiImage }) {
                 </AlertDialogHeader>
             </AlertDialogContent>
         </AlertDialog>
-)
+    )
 }
 
 export default AiOutputDialog
